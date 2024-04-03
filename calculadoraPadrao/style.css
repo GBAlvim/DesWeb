@@ -1,71 +1,54 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
 }
 
 .calculator {
     width: 300px;
-    background-color: #464646;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px #00000040;
-    font-family: "Helvetica Neue", sans-serif;
-    overflow: hidden;
-
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Cor de fundo da calculadora */
 }
 
-.result {
-    height: 75px;
-    padding: 20px;
-    text-align: right;
-    color: #fff;
-    font-size: 2.5rem;
+.display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black; /* Cor de fundo do visor */
+}
+
+.sub-display {
+    margin-bottom: 10px;
+
+
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
+    grid-gap: 5px;
 }
 
-.buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+button {
+    padding: 10px;
+    font-size: 18px;
     border: none;
-    outline: none;
+    border-radius: 5px;
     cursor: pointer;
+    background-color: #e0e0e0; /* Cor de fundo dos botões */
+    color: #333; /* Cor do texto dos botões */
 }
 
-.button-zero {
-    grid-column: span 2;
+button.operator {
+    background-color: #ff9800; /* Cor de fundo dos botões de operação */
+    color: #fff; /* Cor do texto dos botões de operação */
 }
 
-.bg-gray {
-    background-color: #585858;
-}
-
-.bg-light-gray {
-    background-color: #747474;
-}
-
-button:active {
-    opacity: 0.9;
-}
-
-.bg-orange {
-    background-color: #f2a43b;
+button:hover {
+    background-color: #d8d8d8; /* Cor de fundo dos botões quando hover */
 }
