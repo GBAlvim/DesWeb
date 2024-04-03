@@ -9,7 +9,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; /* Cor de fundo da calculadora */
+    background-color: #f9f9f9; 
 }
 
 .display {
@@ -19,11 +19,13 @@ body {
     font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: black; /* Cor de fundo do visor */
+    background-color: black; 
 }
 
 .sub-display {
     margin-bottom: 10px;
+    font: black;
+    background-color: gray;
 
 
 }
@@ -40,15 +42,15 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #e0e0e0; /* Cor de fundo dos botões */
-    color: #333; /* Cor do texto dos botões */
+    background-color: #e0e0e0; 
+    color: #333; 
 }
 
 button.operator {
-    background-color: #ff9800; /* Cor de fundo dos botões de operação */
-    color: #fff; /* Cor do texto dos botões de operação */
+    background-color: #ff9800; 
+    color: #fff; 
 }
 
 button:hover {
-    background-color: #d8d8d8; /* Cor de fundo dos botões quando hover */
+    background-color: #d8d8d8; 
 }

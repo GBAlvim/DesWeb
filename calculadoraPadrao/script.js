@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const display = document.querySelector('.display');
     const subDisplay = document.querySelector('.sub-display');
-    const historyDisplay = document.querySelector('.history-display'); // Seleciona o segundo display
+    const historyDisplay = document.querySelector('.history-display'); 
     const buttons = document.querySelectorAll('.buttons button');
 
     let currentInput = '';
     let subDisplayContent = '';
-    let historyContent = ''; // Variável para armazenar o histórico
+    let historyContent = ''; 
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         subDisplayContent = '';
         updateDisplay();
         subDisplay.value = '';
-        historyContent = ''; // Limpa o histórico
-        historyDisplay.value = ''; // Limpa o segundo display
+        historyContent = ''; 
+        historyDisplay.value = ''; 
     }
 
     function backspace() {
@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const result = evaluateExpressionUsingStack(currentInput);
             currentInput = result.toString();
-            historyContent += currentInput; // Adiciona o resultado ao histórico
+            historyContent += currentInput; 
         } catch (error) {
             currentInput = 'Erro';
         }
         updateDisplay();
         subDisplay.value = '';
-        historyDisplay.value = historyContent; // Atualiza o segundo display com o histórico
+        historyDisplay.value = historyContent; 
     }
 
     function calculateSquareRoot() {
