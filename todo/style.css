@@ -1,0 +1,66 @@
+/* Estilos para o container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Estilos para o formulário de adição de tarefas */
+.task-form {
+    width: 30%;
+    padding: 10px;
+}
+
+.task-form h2 {
+    text-align: center;
+}
+
+.task-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.task-form .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-form .button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a lista de tarefas */
+.task-list {
+    width: 30%;
+    border: none;
+    padding: 10px;
+}
+
+.task-list h2 {
+    text-align: center;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
