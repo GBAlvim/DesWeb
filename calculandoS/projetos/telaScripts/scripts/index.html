@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDE de Programação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IDE de Programação</h1>
+    <div class="code-editor">
+      <textarea id="htmlCode" placeholder="Digite seu código HTML aqui"></textarea>
+      <textarea id="cssCode" placeholder="Digite seu código CSS aqui"></textarea>
+      <textarea id="jsCode" placeholder="Digite seu código JavaScript aqui"></textarea>
+    </div>
+    <button onclick="gerarCodigo()">Gerar Código</button>
+    <textarea id="codigoGerado" placeholder="O resultado será exibido aqui" readonly></textarea>
+    <iframe id="resultadoFrame"></iframe>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
